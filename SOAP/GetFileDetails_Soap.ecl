@@ -30,6 +30,15 @@ http:// 'Esp_Url' /WsDfu/DFUInfo?ver_=1.2&wsdl
 
 **/
 
+EXPORT Bundle := MODULE(Std.BundleBase)
+   EXPORT Name       := 'GetFileDetails_Soap';
+   EXPORT Description     := 'Function to make DFUInfo Soap call';
+   EXPORT Authors       := ['abhisrphoenix'];
+   EXPORT License       := 'http://www.apache.org/licenses/LICENSE-2.0';
+   EXPORT Copyright     := 'Use, Improve, Extend, Distribute';
+   EXPORT DependsOn     := [];
+   EXPORT Version       := '1.0.0';
+ END; 
 EXPORT GetFileDetails_Soap(STRING EspUrl, STRING FileName ,STRING  Cluster = '') := FUNCTION
 
 DFUInfoRequest := 
