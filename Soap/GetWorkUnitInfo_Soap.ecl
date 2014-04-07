@@ -97,6 +97,3 @@ DATASET WuInfoSoapCall   :=   SOAPCALL(EspUrl+'/WsWorkunits/'
 RETURN WuInfoSoapCall;
 
 END;
-
-x := GetWorkUnitInfo_Soap('http://10.194.10.2:8010/','W20140211-162628');
-x
